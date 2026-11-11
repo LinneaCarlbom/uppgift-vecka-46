@@ -3,15 +3,51 @@ body {
   font-family: sans-serif;
 }
 
-/* The Pixi canvas sits behind the text */
+/* Pixi canvas sitter bakom texten */
 canvas {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: -1; /* lägger canvasen bakom allt annat */
 }
 
 main {
   max-width: 40rem;
   padding: 2rem;
+}
+
+h1 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+/* lite transparent ruta bakom texten */
+.text {
+  background: rgba(18, 0, 31, 0.8);
+  padding: 1.5rem;
+  flex: 1;
+}
+
+.text h2 {
+  color: white;
+}
+
+.text p {
+  color: white;
+}
+
+.rad {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  max-width: 60rem;
+  margin: 3rem auto;
+}
+
+.rad img {
+  width: 50%;       /* bilden tar halva raden */
+  height: auto;     /* behåller bildens proportioner */
 }
